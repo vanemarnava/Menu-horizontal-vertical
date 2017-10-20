@@ -1,0 +1,55 @@
+
+/*color de fondo #2e2e2a
+  color de hover #f9a91a
+*/
+
+body
+{
+	font-family: sans-serif;
+}
+
+nav
+{
+	/*outline: 1px solid yellow; ayuda visual*/
+}
+
+ul
+{
+	/*outline: 1px solid blue;*/
+	list-style: none; /*quitar las vinetas*/
+	padding: 0; /*para que no quede espacio*/
+	margin: 0; /*para que no quede espacio*/
+	background:#2e2e2a;
+	line-height: 40px;
+	overflow: auto;/*se debe usar siempre con el float*/
+}
+
+li /*etiqueta tipo bloque*/
+{
+	/*outline: 1px solid red;*/
+	width: 100px;/*ancho especifico*/
+	/*display: inline-block;*/ /*las etiquetas de bloque, tengan naturaleza inline, 
+	colocandose una al lado de la otra*/
+	text-align: center;/*no en la etiqueta ul porque centrara a partir del ancho del navegador*/
+
+	float: left; /*otra forma, cambiar el display:inline-block*/
+}
+
+a /*etiqueta tipo inline*/
+{
+	/*outline: 1px solid green;*/
+	text-decoration: none; /*saca subrayado*/
+	color: white; /*letras blancas*/
+	display: block; /*de inline pasa a ser etiqueta tipo bloque, 
+	la etiqueta ocupa el espacio disponible de la etiqueta madre li, 
+	asi toda la etiqueta puede ser lincleable y no estar necesariamente 
+	arriba de la palabra */ 
+	color:white;
+}
+
+a:hover
+{
+	background:#f9a91a;
+	color:#000; 
+}
+
